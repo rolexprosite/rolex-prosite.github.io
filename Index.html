@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Nome — Sites e Soluções</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        :root { --cor-principal: #2563eb; --cor-escura: #1f2937; --cor-clara: #f3f4f6; }
+        body { background: var(--cor-clara); color: var(--cor-escura); line-height: 1.6; }
+        .caixa { max-width: 600px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; padding: 30px 0; }
+        h1 { font-size: 1.8rem; margin-bottom: 10px; color: var(--cor-escura); }
+        .destaque { color: var(--cor-principal); }
+        .texto-menor { font-size: 1.1rem; color: #6b7280; margin-bottom: 25px; }
+        .botao { display: inline-block; background: var(--cor-principal); color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; margin: 5px; }
+        .botao-linha { background: transparent; border: 2px solid var(--cor-principal); color: var(--cor-principal); }
+        .servico { background: white; padding: 20px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .servico h3 { margin-bottom: 8px; }
+        .preco { font-size: 1.2rem; font-weight: bold; color: var(--cor-principal); margin: 8px 0; }
+        .contato { background: white; padding: 25px; border-radius: 12px; margin-top: 30px; }
+        input, textarea { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ddd; border-radius: 6px; font-size: 16px; }
+        button { background: var(--cor-principal); color: white; border: none; padding: 12px; border-radius: 6px; font-size: 16px; font-weight: bold; width: 100%; cursor: pointer; }
+        footer { text-align: center; margin-top: 40px; padding: 20px; color: #6b7280; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <header>
+            <h1>Olá, sou o <span class="destaque">Seu Nome Completo</span></h1>
+            <p class="texto-menor">Crio sites simples, bonitos e que funcionam</p>
+            <a href="#servicos" class="botao">Ver Preços</a>
+            <a href="#contato" class="botao botao-linha">Pedir Orçamento</a>
+        </header>
+
+        <section id="servicos">
+            <h2>Meus Serviços</h2>
+            
+            <div class="servico">
+                <h3>🌐 Site Simples</h3>
+                <p>Página profissional pronta, que funciona no celular e no computador.</p>
+                <p class="preco">A partir de R$ 250</p>
+            </div>
+
+            <div class="servico">
+                <h3>📱 Site Completo</h3>
+                <p>Várias páginas: Início, Sobre, Serviços e Contato. Otimizado.</p>
+                <p class="preco">A partir de R$ 600</p>
+            </div>
+
+            <div class="servico">
+                <h3>🔄 Manutenção Mensal</h3>
+                <p>Atualizações, ajustes e suporte para seu site sempre funcionando.</p>
+                <p class="preco">R$ 80 por mês</p>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <h2>Peça seu Orçamento Grátis</h2>
+            <form action="https://formspree.io/f/seu-codigo" method="POST">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" rows="4" placeholder="Conte o que você precisa..." required></textarea>
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </section>
+
+
+      
